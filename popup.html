@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab Audio Streamer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+    }
+    h3 {
+      margin-top: 0;
+      font-size: 16px;
+      color: #333;
+    }
+    button {
+      margin: 5px 0;
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      border: none;
+      border-radius: 4px;
+      background-color: #4285f4;
+      color: white;
+      cursor: pointer;
+    }
+    button:disabled {
+      background-color: #ccc;
+      cursor: default;
+    }
+    #status {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+  <h3>Tab Audio Streamer</h3>
+  <button id="start">Start Streaming</button>
+  <button id="stop" disabled>Stop Streaming</button>
+  <div id="status">Idle</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
